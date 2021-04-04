@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import styles from '../styles/NavBar.module.css'
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/router'
+const uuid = require('uuid');
 
 export default function NavBar() {
     const router = useRouter();
@@ -16,7 +17,7 @@ export default function NavBar() {
             <a>GALLERY</a>
           </Link>
           <Link href="/request">
-            <a>REQUEST</a>
+            <a onClick={() => router.reload()}>REQUEST</a>
           </Link>
         </div>
       </div>

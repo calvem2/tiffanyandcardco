@@ -15,11 +15,11 @@ class Form extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            formType: "inventory",  // request type (from inventory, existing card, or custom)
-            currentStep: 0,         // current step in the form
-            designChoices: {},      // user design selections; photo id (or 'custom') mapped to info (quantity, notes, occasion, etc.)
-            email: "",              // user email address
-            insta: ""               // user instagram handle
+            formType: "inventory",          // request type (from inventory, existing card, or custom)
+            currentStep: 0,                 // current step in the form
+            designChoices: {},              // user design selections; photo id (or 'custom') mapped to info (quantity, notes, occasion, etc.)
+            email: "",                      // user email address
+            insta: ""                       // user instagram handle
         };
     }
 
