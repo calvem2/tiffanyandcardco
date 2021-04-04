@@ -8,7 +8,9 @@ export default function NavBar() {
 
     return (
       <div className={styles.header}>
-        <div id={styles.logo}>Tiffany & Card Co.</div>
+        <Link href="/">
+          <a id={styles.logo}>Tiffany & Card Co.</a>
+        </Link>
         <div id={styles.menu}>
           <Link href="/about">
             <a>ABOUT</a>

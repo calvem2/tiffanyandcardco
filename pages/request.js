@@ -6,6 +6,10 @@ const GSheetReader = require('g-sheets-api');
 export default function Request(props) {
     return (
         <div>
+          <Head>
+                <title>tiffanyandcardco | request</title>
+                <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/google/274/love-letter_1f48c.png"/>
+            </Head>
           <NavBar/>
           <Form 
             step={0}

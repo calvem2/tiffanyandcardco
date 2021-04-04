@@ -6,6 +6,10 @@ import style from "../styles/About.module.css"
 export default function About(props) {
     return (
       <div>
+        <Head>
+          <title>tiffanyandcardco | about</title>
+          <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/google/274/love-letter_1f48c.png"/>
+        </Head>
         <NavBar></NavBar>
         <div className={style.flex}>
           <div id={style.image}>
