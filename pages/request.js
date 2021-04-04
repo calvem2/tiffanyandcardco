@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/Footer';
 import Form from '../components/Form'
 import NavBar from '../components/NavBar'
 const GSheetReader = require('g-sheets-api');
@@ -12,9 +13,9 @@ export default function Request(props) {
           </Head>
           <NavBar/>
           <Form 
-            step={0}
             imageData={props.imageData}
           />
+          <Footer></Footer>
         </div>
     )
 }

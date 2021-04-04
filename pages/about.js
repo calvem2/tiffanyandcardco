@@ -22,6 +22,7 @@ export default function About(props) {
               <p>I love making cards for birthdays, holidays, and everything in between for my friends and family. Check out my gallery to see what I've made so far!</p>
           </div>
         </div>
+        <Footer></Footer>
       </div>
     )
 }

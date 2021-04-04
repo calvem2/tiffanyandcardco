@@ -158,15 +158,15 @@ class Form extends Component {
     startScreen = () => {
         if (this.state.currentStep === 0) {
             return (
-                <div id={style.start}>
-                        <div id={style["start-info"]}>
-                            <p>
-                                Hello! I'd love to craft something up for you.
-                                Tell me a little about your card needs and I'll be in touch!
-                            </p>
-                            <p id={style["start-button"]} onClick={this.next}>get started</p>
-                        </div>
-                </div>
+                    <div id={style.start}>
+                            <div id={style["start-info"]}>
+                                <p>
+                                    Hello! I'd love to craft something up for you.
+                                    Tell me a little about your card needs and I'll be in touch!
+                                </p>
+                                <p id={style["start-button"]} onClick={this.next}>get started</p>
+                            </div>
+                    </div>
             );
         }
         return null;

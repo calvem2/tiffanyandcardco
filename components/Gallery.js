@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import CategorySelector from "./CategorySelector";
-import Footer from "./Footer"
 import style from '../styles/Gallery.module.css';
 import * as _ from "underscore";
 
@@ -78,7 +77,6 @@ class Gallery extends Component {
                         {this.makeGalleryImgs()}
                     </div>
                 </div>
-                <Footer/>
             </div>
                 
         );

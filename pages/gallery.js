@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/Footer';
 import Gallery from "../components/Gallery";
 import NavBar from "../components/NavBar"
 const GSheetReader = require('g-sheets-api');
@@ -16,6 +17,7 @@ export default function Home(props) {
                 initialCategory="all"
                 imageData={props.res}
             />
+            <Footer></Footer>
         </div>
         
     )
