@@ -9,7 +9,7 @@ export default function Request(props) {
           <Head>
                 <title>tiffanyandcardco | request</title>
                 <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/google/274/love-letter_1f48c.png"/>
-            </Head>
+          </Head>
           <NavBar/>
           <Form 
             step={0}
