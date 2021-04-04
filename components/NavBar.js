@@ -18,7 +18,7 @@ export default function NavBar() {
             <a>GALLERY</a>
           </Link>
           <Link href="/request">
-            <a onClick={() => router.reload()}>REQUEST</a>
+            <a onClick={() => {if (router.pathname === "/request") {router.reload()}}}>REQUEST</a>
           </Link>
         </div>
       </div>
