@@ -1,0 +1,54 @@
+.header {
+  padding-top: 1.5vh;
+  /* background-color: #a4ddd1; */
+}
+
+#logo {
+  color: black;
+  display: block;
+  font-size: 4vw;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  font-style: italic;
+  text-align: center;
+  text-decoration: none;
+  /* padding: 46px 0px 20px 0px; */
+}
+
+#menu {
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Menu items */
+#menu > a, #menu > .dropdown {
+  display: inline-block;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+/* Links in the menu*/
+#menu a {
+  font-size: 1.5vw;
+  font-weight: 400;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* style selected menu item*/
+.selected {
+  color: #83af9b;
+}
+
+/* style unselected menu items */
+.unselected {
+  color: black;
+}
+
+/* Change menu item text color on hover */
+#menu a:hover, .dropdown:hover .dropbtn {
+  color: #83af9b;
+  /*font-weight: bold;*/
+}

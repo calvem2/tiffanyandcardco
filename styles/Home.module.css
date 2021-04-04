@@ -1,0 +1,68 @@
+.bgWrap img {
+  opacity: .8;
+}
+
+#logo {
+  color: black;
+  display: block;
+  font-size: 5vw;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  font-style: italic;
+  text-decoration: none;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 5vh;
+}
+
+.button {
+  color: #a4ddd1;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1.5vw;
+  margin: 100px;
+  padding: 10px;
+  border: 2px solid #a4ddd1;
+  border-radius: 10px;
+}
+
+.button:hover {
+  color: white;
+  background-color: #a4ddd1;
+}
+
+.background {
+  height: 100px;
+}
+
+.main {
+  color: pink;
+  width: 75%;
+  margin: auto;
+}
+
+.intro {
+  color: black;
+}
+
+.bgWrap {
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  position: absolute;
+}
+
+.bgText {
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+.subHead {
+  font-weight: 400;
+}

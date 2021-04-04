@@ -1,0 +1,21 @@
+#footer {
+  position: relative;
+  margin: 15px auto;
+  background-color: rgba(172, 217, 198, .7);
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+}
+
+#footer:hover {
+  background-color: #83af9b;
+}
+
+/* style footer instagram logo */
+#footer img{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 50px;
+  width: 50px;
+}
