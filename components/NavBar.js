@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import styles from '../styles/Navbar.module.css'
 import { useRouter } from 'next/router'
-const uuid = require('uuid');
 
 export default function NavBar() {
     const router = useRouter();
