@@ -1,4 +1,7 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# tiffany & card co
+
+A portfolio [website](https://calvem2.github.io/tiffanyandcardco/) for influencer™️ [@tiffanyandcardco](https://www.instagram.com/tiffanyandcardco/).
+Explore past projects, learn a bit about tiffany herself, and request handmade cards! 
 
 ## Getting Started
 
