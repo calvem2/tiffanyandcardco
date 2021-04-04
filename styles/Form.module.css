@@ -1,0 +1,324 @@
+.form h1, .form h2 {
+  text-align: center;
+}
+/* style form title */
+.form h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  color: #09486B;
+  font-style: italic;
+}
+
+/* style form section titles (for custom card request form) */
+.form h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: rgb(172, 217, 198);
+}
+
+.form-group {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* next and prev buttons */
+#nav-container {
+  margin: 35px;
+  text-align: center;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+  color: #09486B;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100px;
+}
+
+.nav-btn:focus {
+  outline: none;
+}
+
+.nav-btn.disabled {
+  color: #BABEBF;
+  cursor: default;
+}
+
+/* submit button */
+.submit {
+  border: none;
+  font-family: 'Playfair Display', serif;
+  font-size: 14pt;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(9, 72, 107, .85);
+  color: white;
+  display: block;
+  height: 50px;
+  width: 150px;
+  margin: auto;
+}
+
+.submit:hover {
+  background-color: #09486B;
+}
+
+.submit.disabled {
+  background-color: #BABEBF;
+  cursor: default;
+}
+
+.submit:focus {
+  outline: none;
+}
+
+/************** START PAGE **************/
+#start {
+  position: relative;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  /*border: 5px solid red;*/
+}
+
+/* style background image*/
+#start img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+/* style request info */
+#start-info {
+  border-radius: 10px;
+  background-color: rgba(252,157,154, .6);
+  width: 45%;
+  vertical-align: middle;
+  margin: 85px auto 95px;
+  padding: 20px;
+}
+
+/* style request info text */
+#start-info p {
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  font-size: 14pt;
+}
+
+/* style header */
+#request-header {
+  font-size: 28pt;
+  color: white;
+  font-weight: bold;
+}
+
+/* style start button */
+#start-button {
+  margin: 25px auto auto;
+  padding: 5px;
+  border-radius: 5px;
+  width: 25%;
+  background-color: white;
+}
+
+#start-button:hover {
+  color: dimgrey;
+  cursor: pointer;
+}
+
+/************** MENU **************/
+#form-menu {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+#form-menu * {
+  display: inline-block;
+  border: 2px solid rgba(252, 157, 154, .6);
+  padding: 5px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#form-menu .selected {
+  color: white;
+  background-color: #FE9898;
+}
+
+#form-menu .unselected {
+  color: dimgrey;
+}
+
+/************** DESIGN CHOOSER **************/
+
+/* style category titles */
+.form h3 {
+  font-size: 18pt;
+  margin-left: 50px;
+  color: dimgrey;
+  font-weight: normal;
+}
+
+.design-sections {
+  width: 80%;
+  margin: auto;
+}
+
+/* style list of options*/
+.form ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* hide checkboxes */
+.form input[type="checkbox"] {
+  display: none;
+}
+
+/* style unselected choice */
+.design-choice {
+  border: 3px solid white;
+  height: 250px;
+  width: 250px;
+  display: block;
+  margin: 5px;
+  cursor: pointer;
+
+}
+
+/* style selected choices */
+:checked + .design-choice {
+  border-color: #FE9898;
+}
+
+/* style choice images */
+.design-choice img {
+  height: 250px;
+  width: 250px;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+/* style images for selected choices */
+:checked + .design-choice img {
+  transform: scale(0.95);
+  z-index: -1;
+}
+
+/************** CHECK OUT **************/
+/* style each product section */
+.product {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+/* style for notes/quantity area */
+.product-info {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 420px;
+  margin: 10px;
+  color: black;
+}
+
+/* style custom card summary description*/
+.description p {
+  color: black;
+}
+
+/* style product images */
+.product img {
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+}
+
+/************** QUANTITY **************/
+
+/* style quantity and occasion selector */
+.quantity, .occasion {
+  display: block;
+  padding-bottom: 15px;
+  height: 35px;
+  width: 200px;
+  font-size: 12pt;
+}
+
+.quantity select, .occasion select {
+  margin-left: 10px;
+
+}
+
+/************** NOTES **************/
+
+/* style notes area */
+.form textarea {
+  margin-top: 10px;
+  font-family: inherit;
+  font-size: 12pt;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 150px;
+  width: 350px;
+}
+
+.form textarea::placeholder, .form input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12pt;
+  color: #BABEBF;
+}
+
+/* style inputs that have been clicked */
+.form select:focus, .form textarea:focus, .form input:focus {
+  outline: none;
+  border: 2px solid #FE9898;
+}
+
+/************** ORDER REVIEW **************/
+#review-products {
+  background-color: rgba(172, 217, 198, .2);
+  border-radius: 20px;
+  width: 55%;
+  margin: auto;
+}
+/* style product info text */
+img + .product p {
+  color: dimgrey;
+}
+
+/* style intro text */
+.greeting-msg {
+  font-size: 12.5pt;
+  display: block;
+  text-align: center;
+  width: 30%;
+  margin: auto auto 25px;
+}
+
+/* style email/insta inputs */
+.contact {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  margin: 25px auto;
+  text-align: center;
+  font-size: 12pt;
+}
+
+.contact input {
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 5px;
+  height: 40px;
+  width: 200px;
+  margin-left: 15px;
+}
