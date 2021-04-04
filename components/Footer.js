@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import style from '../styles/Footer.module.css';
-// const instagram = require("../public/images/instagram.png");
 
 class Footer extends Component {
     render() {

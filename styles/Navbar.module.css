@@ -12,7 +12,6 @@
   font-style: italic;
   text-align: center;
   text-decoration: none;
-  /* padding: 46px 0px 20px 0px; */
 }
 
 #menu {
@@ -50,5 +49,4 @@
 /* Change menu item text color on hover */
 #menu a:hover, .dropdown:hover .dropbtn {
   color: #83af9b;
-  /*font-weight: bold;*/
 }

@@ -10,50 +10,13 @@ class Gallery extends Component {
         super(props);
         this.state = {
             category: this.props.initialCategory,   // category of images to display in gallery
-            // imageData: []                           // metadata for images to display
         };
     }
-
-    // componentDidMount() {
-    //     // clear loader
-    //     setTimeout(function() {
-    //         document.getElementById("loader-container").style.display = "none";
-    //         document.getElementById("g-gallery").style.display = "flex";
-    //     }, 500);
-    //
-    //     // set fetch options
-    //     let options = {
-    //         sheetId: '1S_GLsf_4g2aDGEnJPsDvkvokQ0V8sIvLN5_py09fIxY',
-    //         sheetNumber: 1,
-    //         returnAllResults: false,
-    //     };
-    //
-    //     // fetch data
-    //     GSheetReader(options, results => {
-    //         this.setState({
-    //             imageData: results
-    //         });
-    //     }).catch(err => {
-    //             console.log(err);
-    //     });
-    // }
-
-    // componentDidUpdate() {
-    //     // clear loader
-    //     setTimeout(function() {
-    //         document.getElementById("loader-container").style.display = "none";
-    //         document.getElementById("g-gallery").style.display = "flex";
-    //     }, 500);
-    // }
-
 
     /**
      * Update the selected category value
      */
     updateCategory = (newCategory) => {
-        // display loader
-        // document.getElementById("loader-container").style.display = "block";
-        // document.getElementById("g-gallery").style.display = "none";
         this.setState({
             category: newCategory
         });
@@ -75,7 +38,6 @@ class Gallery extends Component {
         // create tags for individual elements
         let imgs = [];
         for (let img of imageData) {
-            // console.log(img);
             let descriptionText = img.materials !== undefined ? img.materials.split(";") : [];
 
             // add bullet point for each element in description if it's not empty

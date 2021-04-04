@@ -14,7 +14,6 @@ export default function Home(props) {
                     quality={100}
                 />
             </div>
-            {/* <NavBar></NavBar> */}
             <div className={styles.bgText}>
                 <h1 id={styles.logo}>Tiffany & Card Co.</h1>
                 <Link href={"./gallery"}>

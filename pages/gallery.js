@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import Gallery from "../components/Gallery";
 import NavBar from "../components/NavBar"
 const GSheetReader = require('g-sheets-api');
