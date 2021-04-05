@@ -24,7 +24,7 @@
     z-index: -1;
     object-fit: cover;
     position: absolute;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 #start-info {

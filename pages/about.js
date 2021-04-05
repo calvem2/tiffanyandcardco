@@ -13,7 +13,7 @@ export default function About(props) {
         <NavBar></NavBar>
         <div id={style.start}>
                 <img
-                    src="/images/gallery.jpg" 
+                    src="/images/about.jpg" 
                 />
                 <div id={style["start-info"]}>
                     <p>

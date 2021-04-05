@@ -11,7 +11,7 @@
     z-index: -1;
     object-fit: cover;
     position: absolute;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 #start-info {
@@ -25,7 +25,7 @@
 }
 
 #start-info p {
-  color: #89d0ccd0;
+  color: black;
   display: block;
   font-size: 5vw;
   font-family: 'Playfair Display', serif;
@@ -98,7 +98,7 @@
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    background-color: #89d0cd23;
+    background-color: #e8d6c2db;
 }
 
 #image img {
