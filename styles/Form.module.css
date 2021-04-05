@@ -271,6 +271,13 @@
   transform-origin: 50% 50%;
 }
 
+@media only screen and (max-width: 675px) {
+  .design-choice, .design-choice img {
+    height: 225px;
+    width: 225px;
+  }
+}
+
 /* style images for selected choices */
 :checked + .design-choice img {
   transform: scale(0.95);
