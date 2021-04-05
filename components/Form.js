@@ -5,7 +5,6 @@ import style from "../styles/Form.module.css"
 import classNames from 'classnames/bind';
 import OrderReview from "./OrderReview";
 import FormMenu from "./FormMenu";
-import Image from 'next/Image'
 import * as emailjs from 'emailjs-com';
 
 const cx = classNames.bind(style);
