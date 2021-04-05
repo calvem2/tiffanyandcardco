@@ -1,5 +1,6 @@
 .bgWrap img {
   opacity: .8;
+  object-fit: cover;
 }
 
 #logo {

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Footer from '../components/Footer';
 import Gallery from "../components/Gallery";
 import NavBar from "../components/NavBar"
+import style from "../styles/Gallery.module.css"
 const GSheetReader = require('g-sheets-api');
 
 export default function Home(props) {
@@ -13,6 +14,17 @@ export default function Home(props) {
                 <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/google/274/love-letter_1f48c.png"/>
             </Head>
             <NavBar/>
+            <div id={style.start}>
+                <img
+                    src="/images/gallery.jpg" 
+                />
+                <div id={style["start-info"]}>
+                    <p>
+                        Gallery
+                    </p>
+                    <a href="#form-start"><span></span></a>
+                </div>
+            </div>
             <Gallery
                 initialCategory="all"
                 imageData={props.res}

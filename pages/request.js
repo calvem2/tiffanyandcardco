@@ -16,21 +16,13 @@ export default function Request(props) {
           <div id={style.start}>
             <img
                 src="/images/request.jpg" 
-                // layout="fill"
-                // objectFit="cover"
-                // quality={100}
             />
             <div id={style["start-info"]}>
-                {/* <h1>Card Request</h1> */}
                 <p>
                     Hello! I'd love to craft something up for you.
                     Tell me a little about your card needs and I'll be in touch!
                 </p>
                 <a href="#form-start"><span></span>Get Started</a>
-                {/* <div 
-                  id={style["start-button"]}
-                  onClick={() => {document.getElementById('form-start').scrollIntoView({block: 'start', behavior: 'smooth'})}}
-                >get started</div> */}
             </div>
           </div>
           <Form 
