@@ -29,7 +29,6 @@ export default function Home(props) {
                 initialCategory="all"
                 imageData={props.res}
             />
-            <Footer></Footer>
         </div>
         
     )

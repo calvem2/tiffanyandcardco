@@ -25,7 +25,7 @@
 }
 
 #start-info p {
-  color: #92d7d4d0;
+  color: #89d0ccd0;
   display: block;
   font-size: 5vw;
   font-family: 'Playfair Display', serif;
@@ -98,7 +98,7 @@
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    background-color: #92d7d42e;
+    background-color: #89d0cd23;
 }
 
 #image img {
