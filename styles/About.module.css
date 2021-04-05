@@ -1,13 +1,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+#start {
+    height: 100%;
+}
+
+#start img {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0.3;
+}
+
+#start-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#start-info p {
+  color: #92d7d4d0;
+  display: block;
+  font-size: 5vw;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  font-style: italic;
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
+  /* margin: auto; */
+  /* margin-bottom: 5vh; */
+}
+
+/* style start button */
+#start a {
+  cursor: default;
+  font-family: "Montserrat";
+  font-size: 1.5vw;
+  padding-top: 70px;
+  position: relative;
+}
+
+#start a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
 
 .flex {
     display: flex;
     padding-top: 3vh;
     margin: auto;
-    width: 60%;
+    /* width: 60%; */
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #92d7d42e;
 }
 
 #image img {
@@ -18,16 +109,9 @@
 
 #info {
     font-family: Montserrat, sans-serif;
-    margin-left: 50px;
-    color: gray;
-    font-size: 18px;
-
-}
-
-#heading {
-    font-family: "Playfair Display", serif;
-    font-weight: 600;
-    font-size: 28px;
-    color: #FE9898;
-    font-style: italic;
+    font-weight: 300;
+    line-height: 5vh;
+    /* color: gray; */
+    font-size: 3vh;
+    width: 60%;
 }
