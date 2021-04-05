@@ -126,8 +126,8 @@
 /* descriptions for each individual image*/
 .description, .empty-description {
     /* size*/
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height: 230px;
     margin: 0;
 
     /* align with image container */

@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Footer from '../components/Footer';
 import Gallery from "../components/Gallery";
 import NavBar from "../components/NavBar"
 import style from "../styles/Gallery.module.css"
