@@ -15,33 +15,8 @@ class DesignChooser extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            imageData: []       // metadata for images to display
+            imageData: this.props.imageData     // metadata for images to display
         };
-    }
-
-    componentDidMount() {
-        // fetch images from google sheet
-        let types = ["cards", "stamps", "inventory"];
-        let imageData = {};
-        for (let i = 0; i < types.length; i++) {
-            let options = {
-                sheetId: '1S_GLsf_4g2aDGEnJPsDvkvokQ0V8sIvLN5_py09fIxY',
-                sheetNumber: i + 2,
-                returnAllResults: false,
-            };
-
-            // fetch data
-            GSheetReader(options, results => {
-                // map form type to images
-                imageData[types[i]] = results;
-            }).catch(err => {
-                console.log(err);
-            });
-        }
-
-        this.setState({
-            imageData: imageData
-        });
     }
 
     /**

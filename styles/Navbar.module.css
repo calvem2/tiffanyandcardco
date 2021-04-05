@@ -1,6 +1,12 @@
+.home-header {
+  padding-top: 1.5vh;
+  /* float: right; */
+  right: 0;
+  position: absolute;
+}
+
 .header {
   padding-top: 1.5vh;
-  /* background-color: #a4ddd1; */
 }
 
 #logo {
@@ -22,10 +28,16 @@
 }
 
 /* Menu items */
-#menu > a, #menu > .dropdown {
+.home-header #menu > a {
   display: inline-block;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.header #menu > a {
+  display: inline-block;
+  margin-left: 3vw;
+  margin-right: 3vw;
 }
 
 /* Links in the menu*/

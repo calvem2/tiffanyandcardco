@@ -1,3 +1,7 @@
+.form {
+  height: 100%;
+}
+
 .form h1, .form h2 {
   text-align: center;
 }
@@ -78,55 +82,54 @@
 }
 
 /************** START PAGE **************/
-.bgWrap {
-  height: 100vh;
-  width: 100vw;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.bgText {
-  /* color: white; */
-  /* height: 100vh; */
-  width: 100vw;
-  margin: 0;
-  /* font-size: 2rem; */
-  /* line-height: 3rem; */
-  /* text-align: center; */
-  /* padding-top: 40vh; */
-}
 
 #start {
-  position: relative;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 50px;
-  /*border: 5px solid red;*/
+  width: 100%;
+  height: 100%;
+  margin-bottom: 7vh;
 }
 
 /* style background image*/
 #start img {
+  height: 100%;
   width: 100%;
-  border-radius: 25px;
+  z-index: -1;
+  position: absolute;
 }
 
 /* style request info */
 #start-info {
-  border-radius: 10px;
-  background-color: rgba(252,157,154, .6);
-  width: 45%;
-  vertical-align: middle;
-  margin: 85px auto 95px;
-  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: -10px;
+}
+
+#start-info h1 {
+  color: black;
+  display: block;
+  font-size: 5vw;
+  font-weight: 800;
+  font-style: italic;
+  text-decoration: none;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 5vh;
 }
 
 /* style request info text */
 #start-info p {
   font-family: Montserrat, sans-serif;
+  color: black;
+  display: block;
+  font-size: 3vw;
+  font-weight: 200;
+  text-decoration: none;
   text-align: center;
-  font-size: 14pt;
+  width: 50%;
 }
 
 /* style header */
@@ -137,17 +140,54 @@
 }
 
 /* style start button */
-#start-button {
-  margin: 25px auto auto;
-  padding: 5px;
-  border-radius: 5px;
-  width: 25%;
-  background-color: white;
+#start a {
+  cursor: default;
+  font-family: "Montserrat";
+  font-size: 1.5vw;
+  padding-top: 70px;
+  position: relative;
 }
 
-#start-button:hover {
-  color: dimgrey;
-  cursor: pointer;
+#start a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
 }
 
 /************** MENU **************/

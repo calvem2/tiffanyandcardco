@@ -5,6 +5,7 @@ import style from "../styles/Form.module.css"
 import classNames from 'classnames/bind';
 import OrderReview from "./OrderReview";
 import FormMenu from "./FormMenu";
+import Image from 'next/Image'
 import * as emailjs from 'emailjs-com';
 
 const cx = classNames.bind(style);
@@ -16,7 +17,7 @@ class Form extends Component {
         super(props);
         this.state = {
             formType: "inventory",          // request type (from inventory, existing card, or custom)
-            currentStep: 0,                 // current step in the form
+            currentStep: 1,                 // current step in the form
             designChoices: {},              // user design selections; photo id (or 'custom') mapped to info (quantity, notes, occasion, etc.)
             email: "",                      // user email address
             insta: ""                       // user instagram handle
@@ -153,26 +154,6 @@ class Form extends Component {
     };
 
     /**
-     * Render request start screen
-     */
-    startScreen = () => {
-        if (this.state.currentStep === 0) {
-            return (
-                    <div id={style.start}>
-                            <div id={style["start-info"]}>
-                                <p>
-                                    Hello! I'd love to craft something up for you.
-                                    Tell me a little about your card needs and I'll be in touch!
-                                </p>
-                                <p id={style["start-button"]} onClick={this.next}>get started</p>
-                            </div>
-                    </div>
-            );
-        }
-        return null;
-    };
-
-    /**
      * send email with request information
      */
     handleSubmit = (event) => {
@@ -220,8 +201,6 @@ class Form extends Component {
     render() {
         return (
             <form className={style.form} onSubmit={this.handleSubmit}>
-                {this.startScreen()}
-
                 {this.state.currentStep === 1 &&
                 <FormMenu
                     formType={this.state.formType}
@@ -236,6 +215,7 @@ class Form extends Component {
                     formType={this.state.formType}
                     designChoices={this.state.designChoices}
                     handleChange={this.handleChange}
+                    imageData={this.props.imageData}
                 />
                 <CheckOut
                     currentStep={this.state.currentStep}
