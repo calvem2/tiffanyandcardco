@@ -21,7 +21,7 @@ export default function Home(props) {
                     <p>
                         Gallery
                     </p>
-                    <a href="#form-start"><span></span></a>
+                    <a href="#g-gallery"><span></span></a>
                 </div>
             </div>
             <Gallery

@@ -102,6 +102,7 @@
   z-index: -1;
   object-fit: cover;
   position: absolute;
+  opacity: 0.7;
 }
 
 /* style request info */
@@ -161,8 +162,8 @@
   width: 24px;
   height: 24px;
   margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-animation: sdb05 1.5s infinite;
@@ -199,7 +200,7 @@
 /************** MENU **************/
 #form-menu {
   margin: auto;
-  width: 50%;
+  width: 80%;
   text-align: center;
 }
 
@@ -209,6 +210,7 @@
   padding: 5px 20px;
   margin: 5px;
   cursor: pointer;
+  width: 190px
 }
 
 #form-menu .selected {

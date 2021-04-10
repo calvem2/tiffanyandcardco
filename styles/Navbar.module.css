@@ -42,9 +42,9 @@
 
 /* Links in the menu*/
 #menu a {
-  font-size: 1.5vw;
+  font-size: 2.25vh;
   font-weight: 400;
-  padding: 14px 16px;
+  padding: 2vh 3vh;
   text-decoration: none;
 }
 

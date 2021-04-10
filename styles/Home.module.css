@@ -21,19 +21,19 @@
 }
 
 .button {
-  color: #a4ddd1;
+  color: #a0d7cb;
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 1.5vw;
   margin: 100px;
   padding: 10px;
-  border: 2px solid #a4ddd1;
+  border: 2px solid #a0d7cb;
   border-radius: 10px;
 }
 
 .button:hover {
   color: white;
-  background-color: #a4ddd1;
+  background-color: #a0d7cb;
 }
 
 .background {
