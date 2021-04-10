@@ -19,10 +19,10 @@ export default function About(props) {
                     <p>
                         hi, i'm tiffany
                     </p>
-                    <a href="#form-start"><span></span></a>
+                    <a href="#about"><span></span></a>
                 </div>
             </div>
-        <div className={style.flex}>
+        <div id="about" className={style.flex}>
           {/* <div id={style.image}>
               <img src="/images/profile.jpeg"/>
           </div> */}

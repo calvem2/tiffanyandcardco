@@ -22,11 +22,10 @@ export default function Request(props) {
                     Hello! I'd love to craft something up for you.
                     Tell me a little about your card needs and I'll be in touch!
                 </p>
-                <a href="#form-start"><span></span>Get Started</a>
+                <a href="#request"><span></span>Get Started</a>
             </div>
           </div>
           <Form 
-            id="form-start"
             imageData={props.imageData}
           />
         </div>

@@ -199,7 +199,7 @@ class Form extends Component {
 
     render() {
         return (
-            <form className={style.form} onSubmit={this.handleSubmit}>
+            <form id="request" className={style.form} onSubmit={this.handleSubmit}>
                 {this.state.currentStep === 1 &&
                 <FormMenu
                     formType={this.state.formType}

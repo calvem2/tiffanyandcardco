@@ -67,7 +67,7 @@ class Gallery extends Component {
     render() {
         console.log(this.props);
         return (
-            <div>
+            <div id="gallery">
                 <div className={style.gallery}>
                     <CategorySelector 
                         selected={this.state.category} 
