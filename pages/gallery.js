@@ -5,7 +5,6 @@ import style from "../styles/Gallery.module.css"
 const GSheetReader = require('g-sheets-api');
 
 export default function Home(props) {
-    console.log(props);
     return (
         <div>
             <Head>

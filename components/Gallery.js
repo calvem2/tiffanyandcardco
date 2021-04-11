@@ -65,7 +65,6 @@ class Gallery extends Component {
     };
 
     render() {
-        console.log(this.props);
         return (
             <div id="gallery">
                 <div className={style.gallery}>
